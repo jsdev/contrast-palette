@@ -1,0 +1,36 @@
+/**
+ * Fonts for new Venngage design pages
+ **/
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-500.woff2") format("woff2");
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/Cairo/Cairo-400.woff2") format("woff2"),
+    url("../fonts/Cairo/Cairo-400.woff") format("woff");
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  font-display: swap;
+}

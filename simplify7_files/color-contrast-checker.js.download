@@ -1,0 +1,22 @@
+var faqIcons = document.getElementsByClassName("faq_content_header_icon");
+
+function faqToggle(event) {
+    var currentElement = event.currentTarget;
+
+    var parentElement = currentElement.parentElement;
+    var faqContentBodyElement = parentElement.nextElementSibling;
+
+    if (faqContentBodyElement.classList.contains("faq_content_body_active")) {
+        faqContentBodyElement.classList.remove("faq_content_body_active");
+        currentElement.children[0].src = "/assets/img/marketing/down_arrow.svg";
+        currentElement.children[0].alt = "Expand FAQ Content";
+    } else {
+        faqContentBodyElement.classList.add("faq_content_body_active");
+        currentElement.children[0].src = "/assets/img/marketing/up_arrow.svg";
+        currentElement.children[0].alt = "Collapse FAQ Content";
+    }
+}
+
+for (let index = 0; index < faqIcons.length; index++) {
+    faqIcons[index].addEventListener("click", faqToggle);
+}
